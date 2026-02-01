@@ -1,0 +1,23 @@
+agent:
+  name: github_agent_001
+  goal: "检测代码提交中的潜在bug并自动创建GitHub Issue"
+
+github:
+  # 🔥 选择一种认证方式即可，代码会自动检测
+
+  # 方式1: Personal Access Token (简单快速)
+  # 取消注释下面两行，并填入你的信息
+  # token: "ghp_your_github_token_here"
+  # repo: "your_username/your_repo"
+  
+  # 方式2: GitHub App (推荐，企业级)
+  # 取消注释下面四行，并填入你的信息
+  # app_id: "your_app_id"
+  # installation_id: "your_installation_id"
+  # private_key_path: "path/to/your/private-key.pem"
+  # repo: "your_username/your_repo"
+
+llm:
+  provider: dashscope  # 阿里百炼
+  model: qwen-turbo
+  api_key: "sk-your_dashscope_api_key"
